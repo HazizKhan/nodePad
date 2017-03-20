@@ -57,7 +57,6 @@ http.createServer((req, res)=>{
             } else {
                 console.log('d el')
                 
-                //specify Content will be an attachment
                 res.setHeader('Content-disposition', 'attachment; filename='+qp.download);
                 res.end(content);
             }
