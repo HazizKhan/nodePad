@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NodePad</title>
+</head>
+<body>
+    <h1>NodePad</h1>
+    <div>
+        <input type="text" placeholder="File Name" id="fileName" required value="{{fileName}}" oninput="onFilenameChange()">
+    </div>
+    <div>
+        <textarea name="text" id="text">{{text}}</textarea>
+    </div>
+    <button onclick="onSave()">Save</button>
+    <button id="download" style="display: none" onclick="onDownload()">Download</button>
+    <script src="./static/script.js"></script>
+</body>
+</html>
